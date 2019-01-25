@@ -19,6 +19,17 @@ public class BreakExample2 {
 		System.out.println("합이 100이 넘는 num : " + num);
 		System.out.println("그 때의 합 sum : " + sum);
 
+
+		// 1분 복습 : 1부터 더했을 때 그 합이 500을 넘는 자연수
+		for(num=1; ; num++) {
+			sum += num;
+			if(sum >= 500) {
+				break;
+			}
+		}
+		System.out.println(sum);
+		System.out.println(num);
+
 	}
 
 }
