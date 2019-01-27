@@ -21,5 +21,20 @@ public class Student {		// 접근제한자 + 클래스 생성 예약어 + 클래
 	public void setStudentName(String name) {	// 학생 이름을 매개변수로 전달받아 설정/수정하는 메서드
 		this.studentName = name;
 	}
+	
+	
+	
+	
+	// 실습 : 클래스가 제대로 수행되는지 알아보기 위해 클래스 내부에 main() 함수를 만들고 직접 실행할 수 있다.
+	public static void main(String[] args) {		// main() 함수
+		Student studentSample = new Student();		// Student 클래스의 인스턴스 생성
+		
+		studentSample.studentID = 100;
+		studentSample.setStudentName("Robin PARK");
+		
+		System.out.println(studentSample.studentID);
+		System.out.println(studentSample.studentName);
+		System.out.println(studentSample.getStudentName());
+	}
 
 }
