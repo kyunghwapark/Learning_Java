@@ -23,6 +23,14 @@ public class CalculatorTest {
 		} else {
 			System.out.println("정보를 출력할 수 없습니다.");
 		}
+		
+		// 인터페이스 디폴트 메서드 사용 (호출법)
+		calc.description();
+		
+		
+		// 인터페이스 정적 메서드 사용
+		int[] arr = {1, 2, 3, 4, 5};
+		System.out.println(Calc.total(arr));
 
 	}
 }

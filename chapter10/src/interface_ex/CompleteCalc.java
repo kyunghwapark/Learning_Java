@@ -26,7 +26,11 @@ public class CompleteCalc extends Calculator {
 	public int square(int num) {
 		return num * num;
 	}
-	
-	
+
+	// 디폴트 메서드 재정의 가능
+//	@Override
+//	public void description() {
+//		System.out.println("CompleteCalc에서 재정의한 디폴트 메서드 입니다.");
+//	}
 
 }
